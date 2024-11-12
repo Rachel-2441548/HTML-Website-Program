@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Pictures - CodeConflux</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url("assets/images/background3.webp") no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .gallery {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #text1 {
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease; /* Smooth zoom effect */
+        }
+
+        /* Focusing effect */
+        .focused {
+            transform: scale(1.05); /* Slightly enlarge the image */
+            filter: brightness(1.1); /* Slightly brighten the image */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Event Gallery</h2>
+    </header>
+    <section class="gallery">
+        <p>Relive the best moments from past CodeConflux events! Scroll through our gallery to see what awaits you this year.</p>
+        <h2>Gallery</h2>
+        <img id="img1" 
+             src="assets/gallery/pic1.jpg" 
+             style="height: 500px; padding-top: 25px; padding-bottom: 25px; width: auto;" 
+             alt="pic1.jpg"
+             onmouseover="focusImage(true)" 
+             onmouseout="focusImage(false)">
+        
+        <div class="button-container">
+            <button onclick="Gallery(-1)">&lt; Previous</button>
+            <span id="text1" style="font-size: large;"> 1 / 9 </span>
+            <button onclick="Gallery(1)">Next &gt;</button>
+        </div>
+
+        <script>
+            var i = 0;
+            const GalleryList = [
+                "pic1.jpg", 
+                "pic2.jpg", 
+                "pic3.jpg", 
+                "pic4.jpg", 
+                "pic5.jpg", 
+                "pic6.jpg", 
+                "pic7.jpg", 
+                "pic8.jpg", 
+                "pic9.jpg"
+            ];
+            
+            function Gallery(g) {
+                i += g;
+                if (i < 0) {
+                    i = GalleryList.length - 1; // Go to the last image
+                } else if (i >= GalleryList.length) {
+                    i = 0; // Go to the first image
+                }
+                document.getElementById("img1").src = `assets/gallery/${GalleryList[i]}`;
+                document.getElementById("img1").alt = GalleryList[i];
+                document.getElementById("text1").innerHTML = ` ${i + 1} / ${GalleryList.length} `;
+            }
+
+            function focusImage(isFocused) {
+                const img = document.getElementById("img1");
+                if (isFocused) {
+                    img.classList.add('focused');
+                } else {
+                    img.classList.remove('focused');
+                }
+            }
+        </script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Details - CodeConflux</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0a23;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1e3a8a;
+            padding: 20px;
+            color: #ffd700;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px #000000;
+        }
+
+        .event-description {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: #1c3d5a;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            color: #e0e6f1;
+        }
+
+        .event-table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 1.1em;
+            background: #111;
+            color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .event-table th, .event-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+
+        .event-table th {
+            background-color: #1e3a8a;
+            color: #ffd700;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .event-table td {
+            background-color: #1c1c1c;
+        }
+
+        .event-table tr:hover {
+            background-color: #333;
+        }
+
+        .event-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Event Details</h2>
+    </header>
+
+    <section class="event-description">
+        <p>Explore our lineup of events designed to challenge your skills and broaden your technical horizons. Each event offers unique learning experiences, networking opportunities, and the chance to win amazing prizes.</p>
+    </section>
+
+    <table class="event-table">
+        <tr>
+            <th>Event</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Venue</th>
+        </tr>
+        <tr>
+            <td><img src="assets/images/code sprint.webp" alt="Code Sprint" class="event-image"><br>Code Sprint</td>
+            <td>Compete in a 24-hour coding marathon to develop innovative solutions to real-world problems.</td>
+            <td>March 10</td>
+            <td>Main Hall</td>
+        </tr>
+        <tr>
+            <td><img src='assets/images/Bug-Bounty-Program.jpg' alt="Bug Bounty" class="event-image"><br>Bug Bounty</td>
+            <td>Showcase your debugging skills by identifying and fixing bugs in complex code.</td>
+            <td>March 11</td>
+            <td>Lab 1</td>
+        </tr>
+        <tr>
+            <td><img src='assets/images/hackathon.jpg' alt="Hackathon" class="event-image"><br>Hackathon</td>
+            <td>Collaborate with peers to create and present a project within a given theme.</td>
+            <td>March 12</td>
+            <td>Lab 2</td>
+        </tr>
+        <tr>
+            <td><img src="assets/images/quiz up.webp" alt="Quiz Up" class="event-image"><br>Quiz Up</td>
+            <td>A fun and challenging technical quiz testing your knowledge across multiple domains.</td>
+            <td>March 13</td>
+            <td>Conference Room</td>
+        </tr>
+        <tr>
+            <td><img src="assets/images/app.webp" alt="App Dev" class="event-image"><br>App Dev</td>
+            <td>Build a mobile application from scratch, focusing on design, usability, and functionality.</td>
+            <td>March 14</td>
+            <td>Lab 3</td>
+        </tr>
+        <tr>
+            <td><img src="assets/images/AI.webp" alt="AI Challenge" class="event-image"><br>AI Challenge</td>
+            <td>Take on machine learning tasks that involve image recognition, NLP, and more.</td>
+            <td>March 15</td>
+            <td>Lab 4</td>
+        </tr>
+        <tr>
+            <td><img src="assets/images/Robotics.webp" alt="Robotics" class="event-image"><br>Robotics</td>
+            <td>Design, build, and program robots to complete given tasks within a set timeframe.</td>
+            <td>March 16</td>
+            <td>Lab 5</td>
+        </tr>
+        <tr>
+            <td><img src="assets/images/data wars.jpg" alt="Data Wars" class="event-image"><br>Data Wars</td>
+            <td>A competition focusing on data analysis, visualization, and interpretation.</td>
+            <td>March 17</td>
+            <td>Lab 6</td>
+        </tr>
+        <tr>
+            <td><img src="assets/images/code golf.png" alt="Code Golf" class="event-image"><br>Code Golf</td>
+            <td>A challenge to solve problems with the shortest code possible.</td>
+            <td>March 18</td>
+            <td>Main Hall</td>
+        </tr>
+        <tr>
+            <td><img src="assets/images/cloud computing.jpg" alt="Cloud Conquest" class="event-image"><br>Cloud Conquest</td>
+            <td>Set up cloud infrastructure to tackle real-world business scenarios.</td>
+            <td>March 19</td>
+            <td>Lab 7</td>
+        </tr>
+    </table>
+</body>
+</html>

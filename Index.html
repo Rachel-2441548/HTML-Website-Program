@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to CodeConflux</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('assets/images/background3.webp') center center no-repeat fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #395fa7;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            background-image: url('assets/images/background2.jpg');
+            color: #ffffff;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            color: #ffd700; 
+        }
+
+        nav.navbar {
+            display: flex;
+            justify-content: center;
+            background: #111;
+            padding: 10px 0;
+        }
+
+        nav.navbar a {
+            color: rgb(32, 74, 211);
+            text-decoration: none;
+            padding: 14px 20px;
+            transition: background 0.3s;
+        }
+
+        nav.navbar a:hover {
+            background: #333;
+        }
+
+        section.intro-section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            color: #e0e6f1;
+        }
+
+        h2 {
+            color: #1e90ff;
+        }
+
+        .schedule, .testimonial {
+            padding: 15px;
+            background: #141414;
+            border-left: 5px solid #1e90ff;
+            margin-top: 20px;
+        }
+
+        .side-animation {
+            position: fixed;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: float 10s infinite alternate;
+            opacity: 0.6;
+        }
+
+        .left-animation {
+            left: 0;
+            background-image: url('assets/images/fire_sparkle.gif');
+            background-size: cover;
+        }
+
+        .right-animation {
+            right: 0;
+            background-image: url('assets/images/fire_sparkle.gif');
+            background-size: cover;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Add image here -->
+    
+
+    <header>
+        
+        <img src="C:/xampp/htdocs/website final/assets/images/logo.png" alt="CodeConflux Logo" style="display: block; margin: 0 auto; width: 200px; height: auto;">
+        <h1>Welcome to CodeConflux</h1>
+        <p>Your gateway to cutting-edge technical events, workshops, and networking with top minds in technology!</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="event.html">Event Details</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="registeration.html">Registration Details</a>
+        <a href="gallery.html">Event Pictures</a>
+    </nav>
+
+    <section class="intro-section">
+        <h2>About CodeConflux</h2>
+        <p>CodeConflux is an annual technical fest bringing together students, professionals, and tech enthusiasts. With hands-on workshops, exciting competitions, and networking opportunities, CodeConflux is your chance to engage with the best in technology and innovation.</p>
+
+        <h2>What to Expect</h2>
+        <ul>
+            <li>Participate in technical workshops led by industry experts</li>
+            <li>Join challenging competitions to showcase your skills</li>
+            <li>Network with peers and professionals in various tech fields</li>
+            <li>Win prizes, certificates, and exclusive CodeConflux merchandise!</li>
+        </ul>
+
+        <div class="schedule">
+            <h2>Event Schedule</h2>
+            <ul>
+                <li><strong>Day 1:</strong> Workshops and Keynote Speeches</li>
+                <li><strong>Day 2:</strong> Competitions and Panel Discussions</li>
+                <li><strong>Day 3:</strong> Networking Sessions and Awards Ceremony</li>
+            </ul>
+        </div>
+
+        <div class="testimonial">
+            <h2>What Participants Are Saying</h2>
+            <p>"CodeConflux was an amazing experience! I learned so much and met so many like-minded people." - <em>Alice S.</em></p>
+            <p>"The workshops were hands-on and insightful. I can't wait for the next event!" - <em>John D.</em></p>
+        </div>
+    </section>
+
+    <!-- Floating animations on the sides -->
+    <div class="side-animation left-animation"></div>
+    <div class="side-animation right-animation"></div>  
+</body>
+</html>

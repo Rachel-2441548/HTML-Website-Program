@@ -1,0 +1,138 @@
+/* Body and Background */
+body {
+    background: url('assests/images/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Animated Title and Introduction */
+.animated-title {
+    font-size: 2.5rem;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animated-intro {
+    font-size: 1.2rem;
+    text-align: center;
+    animation: slideIn 3s ease-in-out;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ccc;
+}
+
+/* Intro Section */
+.intro-section {
+    padding: 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+/* Table for Event Details */
+.event-table {
+    width: 90%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.event-table th,
+.event-table td {
+    padding: 1rem;
+    border: 1px solid #ffffff;
+}
+
+.event-table th {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+}
+
+.event-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact-section h3 {
+    margin-top: 1rem;
+}
+
+/* Registration Info */
+.registration-info {
+    text-align: center;
+    padding: 2rem;
+}
+
+.registration-info ol {
+    margin-left: 1.5rem;
+    list-style: decimal inside;
+}
+
+/* Gallery Grid */
+.gallery {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 2rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
